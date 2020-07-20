@@ -159,8 +159,33 @@ h1 img { width:280px }
 .side .btnContents {
     position: absolute;
     bottom: 40px;
-    left: 0;
+    left: 200px;
     color: #b9fb05;
     transform: skew(40deg);
     font-size: 60px;
+    width: 150px;
+    height: 50px;    
 }
+
+.side .btnContents i {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: arrowAni 1.5s infinite linear;
+}
+
+.side .btnContents i:nth-child(1) {animation-delay: 0;}
+.side .btnContents i:nth-child(2) {animation-delay: 0.5s;}
+.side .btnContents i:nth-child(3) {animation-delay: 1s;}
+
+.side:hover .btnContents {left: 700px;}
+
+
+@keyframes arrowAni {
+    0% { }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+        right: 100px;
+    }
+ }
