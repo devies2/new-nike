@@ -71,10 +71,88 @@ h1 img { width:280px }
 
 .sns li:hover {opacity: 1; transform: scale(1.4);}
 
+.txtBox {position: fixed; top: 200px; right: 70px; width: 500px; height: 240px;}
+.tit {
+    font-size: 160px;
+    font-family: 'Monoton', cursive;
+    color: #b9fb05;
+    position: absolute;
+    top: 0;
+    right: 0;
+    letter-spacing: -1px;
+}
+.tit em {
+    font-size: 50px;
+    font-family: 'Play', sans-serif;
+    color: #fff;
+}
 
+.txt {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 34px;
+    font-family: 'Play';
+    color: #bbb;
+    letter-spacing: -2px;
+}
+.txt strong {
+    font: 34px arial;
+    color: #b9fb05;
+    margin-left: 20px;
+}
 
+.side {
+    position: fixed;
+    top: 0;
+    right: -800px;
+    width: 800px;
+    height: 100%;
+    background: #111;
+    opacity: 0.5;
+    transform: skew(-40deg);
+    transition: all 0.5s;
+}
 
+.side:hover {
+    right: -500px;
+    opacity: 0.8;
+}
 
+.side .con {
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    left: 135px;
+    background: #000;
+    transition: all 1s;
+}
 
+.side:hover .con{
+    left: 50px;
+}
 
+.side .con > p {
+    position: absolute;
+    left: 250px;
+    transition: all 0.5s;
+}
+
+.side:hover .con > p {
+    left: 50px;
+}
+
+.side .con p:nth-child(1) {bottom: 270px; transition-delay: 0.1s;}
+.side .con p:nth-child(2) {bottom: 160px; transition-delay: 0.2s;}
+.side .con p:nth-child(3) {bottom: 50px;  transition-delay: 0.25s;}
+.side .con > p > em {
+    color: #a0bd50;
+    font: bold normal 16px/1.7 arial;
+    display: inline-block;
+    transform: skew(40deg);
+    opacity: 0.5;
+}
+
+.side .con img {opacity: 0.3;}
+.side .con img:hover {opacity: 1; transition: all 0.5s;}
 
