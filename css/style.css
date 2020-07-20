@@ -156,3 +156,11 @@ h1 img { width:280px }
 .side .con img {opacity: 0.3;}
 .side .con img:hover {opacity: 1; transition: all 0.5s;}
 
+.side .btnContents {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    color: #b9fb05;
+    transform: skew(40deg);
+    font-size: 60px;
+}
